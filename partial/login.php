@@ -23,6 +23,8 @@ if(isset($_SESSION['ingelogd']) && $_SESSION['ingelogd']){
     <main>
     	<section class="form">
 	    	<form method="post">
+			    <h2>Je haar zit goed</h2>
+                <h5>Inloggen</h5>
 	    		<label for="username" id="username">Gebruikersnaam: </label>
 	    		<input type="text" name="username" required><!-- admin -->
 	    		<label for="password">Wachtwoord: </label>
