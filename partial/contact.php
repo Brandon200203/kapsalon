@@ -30,10 +30,14 @@
         <div class="container mt-5">
   <div class="row">
     <div class="col-sm-7">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h2>Je haar zit goed</h2>
+      <h5>Contact</h5>
+      <p>  Some text about me in culpa qui officia deserunt mollit anim..Some text about me in culpa qui officia deserunt mollit anim..
+      Some text about me in culpa qui officia deserunt mollit anim..Some text about me in culpa qui officia deserunt mollit anim..
+      Some text about me in culpa qui officia deserunt mollit anim..Some text about me in culpa qui officia deserunt mollit anim..
+      Some text about me in culpa qui officia deserunt mollit anim..Some text about me in culpa qui officia deserunt mollit anim..
+      Some text about me in culpa qui officia deserunt mollit anim..Some text about me in culpa qui officia deserunt mollit anim..
+      </p>
      </p>
      </p>
       <a href="partial/logout.php" class="btn-cus">Logout</a>
