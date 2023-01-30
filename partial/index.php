@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="author" content="Maikel Braas">
       <meta name="keywords" content="html,css-- mijn eigen website">
-      <title>Ra site</title>
+      <title>Kapsalon</title>
       <link rel="stylesheet" href="../css/back.css">
   </head>
   <body>
@@ -29,10 +29,9 @@
     <section class="container">
       <div id="sidebar">
         <span>
-          <h2>Gebruikers</h2>
-            <a href="gebruikers.php">Gebruikers</a>
-            <h2>Post</h2>
-            <a href="createPost.php">Add Post</a>
-            <a href="posts.php">Posts</a>
+            <a href="index.php">Home</a>
+            <a href="contact.php">Contact</a>
+            <a href="webshop.php">Webshop</a>
+            <a href="login.php">Inloggen</a>
         </span>
       </div>
