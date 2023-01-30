@@ -4,14 +4,9 @@ require_once 'backend/class/User.php';
 
 $user = new User();
 
-if(isset($_POST['login'])){
-	echo $user->login($_POST);
+if(isset($_POST['register'])){
+	echo $user->create($_POST);
 }
-session_start();
-if(isset($_SESSION['ingelogd']) && $_SESSION['ingelogd']){
-	header("Location: ./backend/admin.php");
-}
-
 
 ?>
 
@@ -19,12 +14,13 @@ if(isset($_SESSION['ingelogd']) && $_SESSION['ingelogd']){
     	<section class="form">
 	    	<form method="post">
 	    		<label for="username" id="username">Gebruikersnaam: </label>
-	    		<input type="text" name="username" required><!-- admin -->
+	    		<input type="text" name="username" required>
 	    		<label for="password">Wachtwoord: </label>
 	    		<input type="password" name="password" required>
-	    		<input type="submit" name="login" value="Login">
+	    		<label for="conf-password">Wachtwoord bevestiging: </label>
+	    		<input type="password" name="conf-password" required>
+	    		<input type="submit" name="register" value="Register">
 	    	</form>
-	    	<a href="registratie.php">Registreren</a>
     	</section>
     </main>
 
