@@ -13,7 +13,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$database =  "kapsalon";
+$database =  "db_examen";
 $conn = new mysqli($host, $user, $pass, $database);
 if($conn->connect_error){
     echo $conn->connect_error;
@@ -22,7 +22,7 @@ $sql = "SELECT * FROM afspraken";
 $result = $conn->query($sql);
 if ($result) {
     while ($row = $result->fetch_row()) {
-      echo  "<a  href='afspraken.php?id=" . $row[1] . "'>" . " " . $row[2] . " " . $row[3] . "</a>" . "<br>";
+      echo  "<a  href='afspraken.php?id=" . $row[1] . " " . " " . $row[2] . " " . $row[3] . "</a>" . "<br>";
     }
 }
 $result->close();

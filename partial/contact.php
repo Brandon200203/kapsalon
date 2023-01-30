@@ -14,15 +14,27 @@
     <header>
       <a href="../index.php"><img src="../image/logo.jpg"></a>
       <p>
-      <?php session_start();
+      <?php 
+      $host = "localhost";
+      $user = "root";
+      $pass = "";
+      $database =  "db_examen";
+      $conn = new mysqli($host, $user, $pass, $database);
+      session_start();
       if(!empty($_SESSION['username'])){
         echo 'Welkom ' . $_SESSION['username'] . ', je activiteiten worden bijgehouden.';
       }else{
-        header("Location: /blog-voorbeeld-swd/login.php");
+        header("Location: ../login.php");
       }
        ?>
-      
-
+        <div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-7">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+     </p>
      </p>
       <a href="partial/logout.php" class="btn-cus">Logout</a>
     </header>
@@ -34,4 +46,5 @@
             <a href="webshop.php">Webshop</a>
             <a href="login.php">Inloggen</a>
         </span>
+        <h2>Privacystatement</h2>
       </div>

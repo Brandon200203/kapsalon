@@ -1,7 +1,12 @@
 <?php
+
 require_once 'partial/header.php';
 require_once 'backend/class/User.php';
-
+$host = "localhost";
+$user = "root";
+$pass = "";
+$database =  "db_examen";
+$conn = new mysqli($host, $user, $pass, $database);
 $user = new User();
 
 if(isset($_POST['login'])){

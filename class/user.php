@@ -65,7 +65,7 @@ class User extends DbConfig{
         }
     }
 
-    public function logout(){
+    public function uitloggen(){
         session_start();
         $_SESSION = null;
         session_unset();
@@ -78,7 +78,7 @@ class User extends DbConfig{
         $stmt = $this->connect()->prepare($sql);
         $stmt->bindParam(":id", $id);
         $stmt->execute();
-        $this->logout();
+        $this->uitloggen();
     }
 
 }
